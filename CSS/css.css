@@ -1,4 +1,6 @@
-  * {
+ 
+ /* backup
+ * {
             box-sizing: border-box;
         }
 
@@ -94,5 +96,205 @@ h3{margin: 20px;}
 .saibamais{ margin-left: 10px;}
 
 
+.anuncio{ width: 728px;
+        height: 90px;
+}
+
+*/
 
 
+
+
+/* ============================== CONFIGURAÇÕES GERAIS ================================= */ 
+
+* { box-sizing: border-box; } 
+
+html { width: 100%; overflow-x: hidden; } 
+
+body { margin: 0; padding: 0; 
+    background: #f1f4f8; 
+    color: #333; 
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 1.7; width: 100%; 
+    overflow-x: hidden; } 
+    
+/* ============================== MENU ================================= */ 
+
+.menu { background-color: blue; 
+    padding: 10px; 
+    margin-top: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: 100%; } 
+    
+.menu a { color: white; 
+    padding: 5px; 
+    text-decoration: none; } 
+    
+.menu1 { display: flex; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 20px; } 
+    
+.menu1 a { display: inline-block; 
+    margin: 0; } 
+    
+.menu1 a:hover { text-decoration: underline; } 
+
+
+/* ============================== LOGO ================================= */ 
+
+.Logo { margin: 0; flex-shrink: 0; } 
+.Logo img { width: 60px; height: 50px; border-radius: 10px; } 
+
+
+/* ============================== LINKS GERAIS ================================= */ 
+
+a { color: #0066cc; font-weight: bold; } 
+
+/* ============================== IMAGENS ================================= */ 
+
+img { max-width: 100%;
+
+} 
+
+.SO { width: 100%; height: 500px; 
+    display: block; } 
+    
+/* ============================== TEXTOS ================================= */ 
+
+p { margin: 20px; } 
+h1, h2, h3 { margin: 20px; } 
+
+/* ============================== ÁREA DOS CARDS ================================= */ 
+
+.saibamais { margin-left: 10px;
+     margin-right: 10px; } 
+     
+/* Remove a necessidade de margem fixa nos cards */ 
+
+.saibamais .row { margin-left: 0 !important; 
+    
+    margin-right: 0 !important; } 
+    
+/* ============================== CARDS ================================= */ 
+
+.card { max-width: 18rem;
+     margin-left: auto;
+      margin-right: auto; } 
+      
+.card img { width: 100%;
+     height: 250px;
+    object-fit: cover; } 
+    
+    
+/* ============================== ANÚNCIOS ================================= */ 
+
+.anuncio { width: 728px; max-width: 100%;
+     min-height: 90px;
+      margin: 0 auto;
+       overflow: hidden; } 
+       
+/* ============================== RODAPÉ ================================= */ 
+
+.rodape { width: 100%; padding: 22px;
+     background: #212529;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 30px; } 
+
+.menu2 { display: flex;
+ justify-content: center;
+ 
+ flex-wrap: wrap;
+  gap: 12px; } 
+  
+  .menu2 a { color: white;
+    
+    text-decoration: none;
+    padding: 5px 10px; } 
+    
+.menu2 a:hover { color: #8ec5ff;
+     text-decoration: underline; } 
+     
+.prodape { margin-bottom: 0; 
+    color: #ced4da; } 
+    
+/* ============================== CONTATO ================================= */ 
+
+.contato-info { background: white;
+     padding: 25px;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 900px; }
+
+
+/* ============================== CELULAR ================================= */
+ @media (max-width: 768px) 
+ { /* MENU */ 
+    .menu { flex-direction: column; 
+        align-items: center; 
+        gap: 10px; } 
+        .menu1 { justify-content: center;
+    gap: 8px; width: 100%; } 
+    .menu1 a { padding: 6px 8px; margin: 0;
+     font-size: 15px; } 
+     
+     /* IMAGEM PRINCIPAL */ 
+     
+     .SO { width: 100%;
+         height: auto; } 
+         
+/* TEXTOS */ 
+
+p { margin: 15px; } 
+
+h1 { font-size: 28px; margin: 15px; } 
+
+h2 { font-size: 23px; margin: 15px; } 
+
+h3 { font-size: 21px; margin: 15px; } 
+
+/* CARDS */ 
+
+.saibamais { margin-left: 5px; margin-right: 5px; } 
+
+.card { width: 100% !important;
+     max-width: 350px; margin-left: auto;
+     margin-right: auto; } 
+     .card img { height: 220px; } 
+     
+/* ANÚNCIO */ 
+
+.anuncio { width: 100%;
+     max-width: 100%;
+      min-height: 50px;
+       overflow: hidden; } 
+       
+/* RODAPÉ */ 
+.rodape { border-radius: 0;
+     padding: 20px 10px; } 
+     .menu2 { flex-direction: column;
+        
+        align-items: center;
+        
+        gap: 5px; } 
+        
+.menu2 a { padding: 5px; } 
+
+.prodape { font-size: 14px; } }
+
+
+
+
+
+/* ============================== CELULARES PEQUENOS ================================= */
+ @media (max-width: 400px) { .menu1 { gap: 4px; } 
+ .menu1 a { font-size: 13px; padding: 5px; } 
+ .Logo img { width: 55px; height: 45px; }
+  h1 { font-size: 25px; }
+   h2 { font-size: 21px; } 
+   h3 { font-size: 19px; } 
+   .card { max-width: 320px; } }
