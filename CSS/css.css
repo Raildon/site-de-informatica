@@ -1,0 +1,98 @@
+  * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #f1f4f8;
+            color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+.menu{
+    background-color: blue;
+    padding: 10px;
+    margin-top: 0;
+    
+}
+
+.menu a{color: white;
+        padding: 5px;
+        text-decoration: none;         
+             
+}
+
+ a {
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+.menu1{
+    display: inline-block;
+    left: 800px;
+    position: absolute;
+}
+
+.menu1 a{ display: inline-block;
+            margin-left: 30px;
+            margin-top: 10px;
+          
+}
+
+
+.logo{
+        margin: 0;
+}
+
+
+.SO{ width: 100%;}
+
+img{height: 400px;
+   
+}
+
+.rodape {
+            width: 100%;
+            padding: 22px;
+            background: #212529;
+            color: white;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .menu2 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .menu2 a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        .menu2 a:hover {
+            color: #8ec5ff;
+            text-decoration: underline;
+        }
+
+        .prodape {
+            margin-bottom: 0;
+            color: #ced4da;
+        
+        }
+
+p{margin: 20px; }
+
+h1{margin: 20px;}
+h2{margin: 20px;}
+h3{margin: 20px;}
+
+.saibamais{ margin-left: 10px;}
+
+
+
+

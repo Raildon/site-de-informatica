@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10</title>
+    <link rel="stylesheet" href="../CSS/css.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        article {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #1d3557;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #457b9d;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #2a9d8f;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul,
+        ol {
+            margin: 15px 0 20px 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        .aviso {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .perigo {
+            background-color: #f8d7da;
+            border-left: 5px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .sucesso {
+            background-color: #d1e7dd;
+            border-left: 5px solid #198754;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .imagem {
+            background-color: #e9ecef;
+            border: 2px dashed #6c757d;
+            min-height: 180px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #555;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .imagem img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 3px 6px;
+            border-radius: 4px;
+            color: #c7254e;
+        }
+
+        footer {
+            background-color: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            article {
+                padding: 20px;
+            }
+
+            footer a {
+                display: block;
+                margin: 8px;
+            }
+        }
+        </style>
+
+
+</head>
+
+
+
+<body>
+ <nav class="menu">
+         <a href="../index.html" class="Logo"><img src="../IMG/LOGO.png"  style="height: 50px; width: 60px; border-radius: 10px;"></a>
+        <div class="menu1">
+        <a href="../index.html">Início</a>
+        <a href="../Artigos/windows.html">Windows</a>
+        <a href="../Artigos/Hardware.html">Hardware</a>
+        <a href="../Artigos/software.html">Sofware</a>
+        <a href="../rodapé/sobre.html">Sobre</a>
+        </div>
+    </nav>
+
+
+  <header>
+        <h1>Como Instalar o Windows 10</h1>
+        <p>Guia passo a passo para instalar o Windows 10 no computador.</p>
+    </header>
+
+    <main>
+        <article>
+
+            <h2>Introdução</h2>
+
+            <p>
+                O Windows 10 é um sistema operacional desenvolvido pela Microsoft.
+                Neste tutorial, você aprenderá como preparar um pendrive bootável
+                e realizar a instalação do Windows 10.
+            </p>
+
+            <div class="aviso">
+                <strong>Atenção:</strong>
+                O suporte oficial ao Windows 10 foi encerrado em 14 de outubro
+                de 2025. Considere utilizar uma versão do Windows que ainda
+                receba atualizações de segurança.
+            </div>
+
+            <h2>1. O que você precisa antes de começar</h2>
+
+            <p>
+                Antes de iniciar a instalação, separe os seguintes itens:
+            </p>
+
+            <ul>
+                <li>Um computador compatível com o Windows 10.</li>
+                <li>Um pendrive com pelo menos 8 GB de capacidade.</li>
+                <li>Uma imagem ISO legítima do Windows 10.</li>
+                <li>O programa Rufus para criar o pendrive bootável.</li>
+                <li>Uma chave de ativação válida, quando necessária.</li>
+                <li>Um backup dos seus arquivos importantes.</li>
+                <li>Conexão com a internet, se possível.</li>
+            </ul>
+
+            <div class="perigo">
+                <strong>Importante:</strong>
+                A instalação personalizada pode apagar arquivos do disco.
+                Faça um backup antes de continuar.
+            </div>
+
+            <h2>2. Baixar o Rufus</h2>
+
+            <p>
+                O Rufus é utilizado para criar pendrives inicializáveis
+                com os arquivos de instalação do Windows.
+            </p>
+
+            <p>
+                Acesse o site oficial:
+            </p>
+
+            <p>
+                <a href="https://rufus.ie/pt_BR/" target="_blank">
+                    Baixar o Rufus no site oficial
+                </a>
+            </p>
+
+            <div class="imagem">
+                <img src="../IMG/rufusbaixar.PNG" alt="baixar rufus">
+            </div>
+
+            <h2>3. Criar o pendrive bootável</h2>
+
+            <ol>
+                <li>Conecte o pendrive ao computador.</li>
+                <li>Abra o programa Rufus.</li>
+                <li>Selecione o pendrive correto em "Dispositivo".</li>
+                <li>Clique em "Selecionar".</li>
+                <li>Escolha a ISO do Windows 10.</li>
+                <li>Confira as configurações do particionamento.</li>
+                <li>Clique em "Iniciar".</li>
+                <li>Aguarde até a criação do pendrive terminar.</li>
+            </ol>
+
+            <div class="aviso">
+                <strong>Observação:</strong>
+                A configuração MBR ou GPT deve ser escolhida de acordo
+                com o modo de inicialização do computador, como BIOS
+                Legacy ou UEFI.
+            </div>
+
+            <div class="perigo">
+                <strong>Cuidado:</strong>
+                O Rufus poderá apagar todos os arquivos do pendrive.
+                Salve seus arquivos antes de iniciar o processo.
+            </div>
+
+            <div class="imagem">
+                 <img src="../IMG/selecionandorufus1.PNG" alt="selecioando rufus">
+            </div>
+
+            <h2>4. Iniciar o computador pelo pendrive</h2>
+
+            <p>
+                Depois de preparar o pendrive, você deverá iniciar o
+                computador utilizando o dispositivo USB.
+            </p>
+
+            <ol>
+                <li>Desligue o computador.</li>
+                <li>Conecte o pendrive bootável.</li>
+                <li>Ligue o computador.</li>
+                <li>Abra o Boot Menu ou entre na BIOS.</li>
+                <li>Selecione o pendrive USB.</li>
+                <li>Pressione Enter para iniciar.</li>
+            </ol>
+
+            <p>
+                As teclas de acesso podem variar conforme o fabricante.
+                Algumas teclas comuns são F12, F9, F11, Esc e Del.
+            </p>
+
+            <div class="imagem">
+                <img src="../IMG/boot_bios.PNG" alt="selecioando rufus">
+            </div>
+
+            <h2>5. Iniciar a instalação do Windows 10</h2>
+
+            <p>
+                Após iniciar pelo pendrive, a tela de instalação do
+                Windows 10 será apresentada.
+            </p>
+
+            <ol>
+                <li>Selecione o idioma de instalação.</li>
+                <li>Escolha o formato de hora e moeda.</li>
+                <li>Selecione o idioma do teclado.</li>
+                <li>Clique em "Avançar".</li>
+                <li>Clique em "Instalar agora".</li>
+            </ol>
+
+            <div class="imagem">
+                <img src="../IMG/telainicialwindows10.PNG" alt="instalando windows 10">
+            </div>
+
+            <h2>6. Inserir a chave do produto</h2>
+
+            <p>
+                O instalador poderá solicitar uma chave de produto do Windows.
+                Se você já possui uma chave válida, poderá inseri-la.
+            </p>
+
+            <p>
+                Dependendo do caso, também poderá existir uma opção para
+                continuar sem inserir a chave naquele momento.
+            </p>
+
+            <div class="aviso">
+                <strong>Atenção:</strong>
+                Utilize uma chave legítima e compatível com a edição
+                do Windows que será instalada.
+            </div>
+
+            <div class="imagem">
+                <img src="../IMG/ativacaowindows10.PNG" alt="ativando o windows 10">
+            </div>
+
+            <h2>7. Escolher a edição do Windows</h2>
+
+            <p>
+                Se solicitado, selecione a edição correspondente à licença
+                do seu computador, como Windows 10 Home ou Windows 10 Pro.
+            </p>
+
+            <ol>
+                <li>Confira a edição desejada.</li>
+                <li>Selecione a opção correta.</li>
+                <li>Clique em "Avançar".</li>
+            </ol>
+
+            <div class="imagem">
+                <img src="../IMG/escolherwindows10.PNG" alt="selecione o tipo de windows 10 a usar">
+            </div>
+
+            <h2>8. Aceitar os termos de licença</h2>
+
+            <p>
+                Leia os termos de licença apresentados pelo instalador.
+                Marque a opção de aceitação e clique em "Avançar".
+            </p>
+
+            <div class="imagem">
+                <img src="../IMG/termoswindows10.PNG" alt="aceitando os termos do windows 10">
+            </div>
+
+            <h2>9. Escolher o tipo de instalação</h2>
+
+            <h3>Atualização</h3>
+
+            <p>
+                A opção de atualização tenta manter arquivos, configurações
+                e programas compatíveis do sistema anterior.
+            </p>
+
+            <h3>Personalizada: instalar somente o Windows</h3>
+
+            <p>
+                A instalação personalizada permite selecionar a partição
+                onde o Windows 10 será instalado. É uma opção utilizada
+                frequentemente em instalações limpas.
+            </p>
+
+            <div class="perigo">
+                <strong>Alerta:</strong>
+                Uma instalação limpa pode remover arquivos, programas
+                e configurações existentes no disco selecionado.
+            </div>
+
+            <div class="imagem">
+                <img src="../IMG/tipodeinstalacaowindows10.PNG" alt="">
+            </div>
+
+            <h2>10. Selecionar e formatar a partição</h2>
+
+            <ol>
+                <li>Selecione o disco ou a partição desejada.</li>
+                <li>Confira o tamanho e as informações exibidas.</li>
+                <li>Se necessário, clique em "Formatar".</li>
+                <li>Confirme a operação.</li>
+                <li>Clique em "Avançar".</li>
+            </ol>
+
+            <div class="perigo">
+                <strong>Cuidado:</strong>
+                Não formate uma partição sem confirmar que ela não
+                contém arquivos importantes.
+            </div>
+
+            <div class="imagem">
+                <img src="../IMG/particaowindows10.PNG" alt="escolhendo a partição para instalação do windows 10">
+            </div>
+
+            <h2>11. Aguardar a instalação dos arquivos</h2>
+
+            <p>
+                O instalador começará a copiar os arquivos do Windows 10
+                para o disco rígido ou SSD.
+            </p>
+
+            <p>
+                O computador poderá reiniciar automaticamente durante
+                o processo de instalação.
+            </p>
+
+            <ul>
+                <li>Não desligue o computador durante a instalação.</li>
+                <li>Mantenha o computador conectado à energia.</li>
+                <li>Remova o pendrive se o computador voltar a iniciar pelo USB.</li>
+            </ul>
+
+            <div class="imagem">
+                <img src="../IMG/copiandoarquivoswindows10.PNG" alt="">
+            </div>
+
+            <h2>12. Configuração inicial do Windows 10</h2>
+
+            <p>
+                Depois da instalação, o Windows 10 apresentará algumas
+                opções de configuração inicial.
+            </p>
+
+            <ol>
+                <li>Selecione a região.</li>
+                <li>Configure o layout do teclado.</li>
+                <li>Adicione outro layout, se necessário.</li>
+                <li>Conecte-se à internet, quando disponível.</li>
+                <li>Configure uma conta de usuário.</li>
+                <li>Crie uma senha ou PIN, se solicitado.</li>
+                <li>Configure as opções de privacidade.</li>
+                <li>Aguarde o carregamento da área de trabalho.</li>
+            </ol>
+
+            <div class="imagem">
+                <img src="../IMG/configuracoesinaiswindows10.png" alt="configurando o windows 10">
+            </div>
+
+            <h2>13. Instalar os drivers</h2>
+
+            <p>
+                Após concluir a instalação, verifique se todos os componentes
+                do computador estão funcionando corretamente.
+            </p>
+
+            <p>Instale ou confira os seguintes drivers:</p>
+
+            <ul>
+                <li>Driver do chipset.</li>
+                <li>Driver de vídeo.</li>
+                <li>Driver de áudio.</li>
+                <li>Driver de rede.</li>
+                <li>Drivers de USB e outros dispositivos.</li>
+            </ul>
+
+            <p>
+                Sempre que possível, baixe os drivers diretamente do site
+                oficial do fabricante.
+            </p>
+
+            <div class="imagem">
+                <img src="../IMG/driverswindows7.PNG" alt="gerenciador de dispositivo drivers">
+            </div>
+
+            <h2>14. Verificar as configurações do sistema</h2>
+
+            <p>
+                Depois de instalar os drivers, confira algumas configurações:
+            </p>
+
+            <ul>
+                <li>Resolução e funcionamento da tela.</li>
+                <li>Conexão com a internet.</li>
+                <li>Funcionamento do áudio.</li>
+                <li>Reconhecimento de teclado e mouse.</li>
+                <li>Data, hora e fuso horário.</li>
+                <li>Ativação do Windows, quando aplicável.</li>
+            </ul>
+
+            <div class="imagem">
+                <img src="../IMG/windows10personalizacao.PNG" alt="">
+            </div>
+
+            <h2>15. Conclusão</h2>
+
+            <p>
+                Após concluir a instalação, configurar o sistema e verificar
+                os drivers, o Windows 10 estará pronto para ser utilizado.
+            </p>
+
+            <div class="sucesso">
+                <strong>Instalação concluída!</strong>
+                Mantenha seus arquivos protegidos e utilize programas
+                obtidos de fontes confiáveis.
+            </div>
+
+            <h2>Recomendações finais</h2>
+
+            <ul>
+                <li>Faça backup dos seus arquivos antes da instalação.</li>
+                <li>Utilize uma ISO legítima do Windows 10.</li>
+                <li>Use uma chave de ativação válida.</li>
+                <li>Evite programas baixados de sites desconhecidos.</li>
+                <li>Considere migrar para um sistema operacional com suporte.</li>
+                <li>Mantenha seus dados pessoais protegidos.</li>
+            </ul>
+
+        </article>
+    </main>
+
+
+
+
+
+<section></section>
+<footer class="rodape">
+    <nav class="menu2">
+        <a href="../rodapé/sobre.html">Sobre</a>
+        <a href="../rodapé/contato.html">Contato</a>
+        <a href="../rodapé/privacidade.html">Política de Privacidade</a>
+        <a href="../rodapé/termos.html">Termos de Uso</a>
+    </nav>
+
+    <p class="prodape">&copy; 2026 - Seu Site. Todos os direitos reservados.</p>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

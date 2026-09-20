@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 7</title>
+    <link rel="stylesheet" href="../CSS/css.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<style>
+*{box-sizing:border-box}
+
+body{
+    background:#f1f4f8;
+    color:#333;
+    font-family:Arial,sans-serif;
+    line-height:1.7}
+
+article{max-width:1000px;
+margin:auto;
+background:#fff;
+padding:30px;
+border-radius:12px;
+box-shadow:0 3px 12px #0001}
+
+header{background:linear-gradient(135deg,#0d6efd,#084298);
+color:#fff;padding:30px;
+border-radius:10px;
+margin-bottom:25px}
+
+h1{line-height:1.3}
+
+h2{color:#0d6efd;
+border-bottom:2px solid #dce6f2;
+padding-bottom:8px}
+
+h3{color:#198754}
+
+section{padding:22px;
+margin-bottom:22px;
+border-left:5px solid #0d6efd;
+border-radius:8px;
+background:#f8fbff}
+
+.passo{background:#fff;
+border:1px solid #d9e3f0;
+border-radius:8px;
+padding:15px;
+margin:12px 0}
+
+.aviso{background:#fff3cd;
+border-left:5px solid #ffc107;
+padding:18px;
+border-radius:8px}
+
+.perigo{background:#f8d7da;
+border-left:5px solid #dc3545;
+padding:18px;
+border-radius:8px}
+
+.dica{background:#d1e7dd;
+border-left:5px solid #198754;
+padding:18px;
+border-radius:8px}
+
+.imagem{min-height:130px;
+margin:18px 0;
+padding:25px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:#6c757d;
+background:#e9ecef;
+border:2px dashed #adb5bd;
+border-radius:8px}
+
+.imagem img{max-width:100%}
+
+a{color:#0d6efd;
+font-weight:bold}
+
+.rodape{
+margin:25px auto 0;
+padding:22px;
+background:#212529;
+color:#fff;
+text-align:center;
+border-radius:10px}
+
+.rodape a{color:#fff;
+margin:0 8px}
+
+@media(max-width:600px){article{padding:15px}header,section{padding:18px}
+
+.rodape a{display:block;margin:8px}}
+
+</style>
+
+</head>
+
+
+
+<body>
+ <nav class="menu">
+         <a href="../index.html" class="Logo"><img src="../IMG/LOGO.png"  style="height: 50px; width: 60px; border-radius: 10px;"></a>
+        <div class="menu1">
+        <a href="../index.html">Início</a>
+        <a href="../Artigos/windows.html">Windows</a>
+        <a href="../Artigos/Hardware.html">Hardware</a>
+        <a href="../Artigos/software.html">Sofware</a>
+        <a href="../rodapé/sobre.html">Sobre</a>
+        </div>
+    </nav>
+
+<header>
+        <h1>Como Instalar o Windows 7</h1>
+        <p>Guia passo a passo para realizar a instalação do sistema operacional.</p>
+    </header>
+
+    <main>
+        <article>
+
+            <h2>Introdução</h2>
+
+            <p>
+                O Windows 7 é um sistema operacional desenvolvido pela Microsoft.
+                Neste tutorial, você aprenderá como preparar um pendrive bootável
+                e realizar a instalação do Windows 7 em um computador.
+            </p>
+
+            <div class="aviso">
+                <strong>Atenção:</strong>
+                O Windows 7 não recebe mais suporte oficial da Microsoft.
+                Evite utilizá-lo em computadores conectados à internet para
+                atividades que envolvam informações importantes.
+            </div>
+
+            <h2>1. O que você precisa antes de começar</h2>
+
+            <p>Antes de iniciar a instalação, tenha os seguintes itens:</p>
+
+            <ul>
+                <li>Um computador compatível com o Windows 7.</li>
+                <li>Um pendrive com pelo menos 8 GB de capacidade.</li>
+                <li>Uma imagem ISO legítima do Windows 7.</li>
+                <li>O programa Rufus para criar o pendrive bootável.</li>
+                <li>Uma chave de ativação válida, quando necessária.</li>
+                <li>Um backup dos seus arquivos importantes.</li>
+            </ul>
+
+            <div class="perigo">
+                <strong>Importante:</strong>
+                A instalação pode apagar os arquivos do disco.
+                Faça um backup antes de continuar.
+            </div>
+
+            <h2>2. Baixar o Rufus</h2>
+
+            <p>
+                O Rufus é um programa utilizado para criar pendrives
+                inicializáveis com arquivos de instalação de sistemas operacionais.
+            </p>
+
+            <p>
+                Acesse o site oficial para baixar o programa:
+            </p>
+
+            <p>
+                <a href="https://rufus.ie/pt_BR/" target="_blank">
+                    Baixar o Rufus no site oficial
+                </a>
+            </p>
+
+            <div class="imagem">
+                <img src="../IMG/rufusbaixar.PNG" alt="baixar rufus">
+            </div>
+
+            <h2>3. Preparar o pendrive bootável</h2>
+
+            <ol>
+                <li>Conecte o pendrive ao computador.</li>
+                <li>Abra o programa Rufus.</li>
+                <li>Na opção "Dispositivo", selecione o pendrive correto.</li>
+                <li>Clique em "Selecionar".</li>
+                <li>Escolha a imagem ISO do Windows 7.</li>
+                <li>Confira as configurações selecionadas.</li>
+                <li>Clique em "Iniciar".</li>
+                <li>Aguarde o término da criação do pendrive.</li>
+            </ol>
+
+            <div class="perigo">
+                <strong>Cuidado:</strong>
+                Todos os arquivos existentes no pendrive poderão ser apagados.
+                Confira se selecionou o dispositivo correto.
+            </div>
+
+            <div class="imagem">
+                <img src="../IMG/selecionandorufus1.PNG" alt="selecioando rufus">
+            </div>
+
+            <h2>4. Iniciar o computador pelo pendrive</h2>
+
+            <p>
+                Depois de criar o pendrive bootável, será necessário iniciar
+                o computador utilizando o pendrive.
+            </p>
+
+            <ol>
+                <li>Conecte o pendrive ao computador desligado.</li>
+                <li>Ligue o computador.</li>
+                <li>Abra o menu de inicialização (Boot Menu).</li>
+                <li>Selecione o pendrive USB.</li>
+                <li>Pressione Enter para iniciar.</li>
+            </ol>
+
+            <p>
+                A tecla para abrir o menu de inicialização pode variar de acordo
+                com o fabricante, sendo comum utilizar F12, F9, F11, Esc ou outra tecla.
+            </p>
+
+            <div class="imagem">
+                <img src="../IMG/boot_bios.PNG" alt="selecioando rufus">
+            </div>
+
+            <h2>5. Iniciar a instalação do Windows 7</h2>
+
+            <p>
+                Após iniciar pelo pendrive, a tela de instalação do Windows 7
+                será exibida.
+            </p>
+
+            <ol>
+                <li>Selecione o idioma de instalação.</li>
+                <li>Escolha o formato de hora e moeda.</li>
+                <li>Selecione o idioma do teclado.</li>
+                <li>Clique em "Avançar".</li>
+                <li>Clique em "Instalar agora".</li>
+            </ol>
+
+            <div class="imagem">
+                <img src="../IMG/instalandowindows7.PNG" alt="abrindo o rufus ">
+            </div>
+
+            <h2>6. Aceitar os termos de licença</h2>
+
+            <p>
+                Leia os termos de licença apresentados pelo instalador.
+                Para continuar, marque a opção de aceitação e clique em
+                "Avançar".
+            </p>
+
+            <div class="imagem">
+                <img src="../IMG/aceitartermoswindows7.PNG" alt="termos de contrato para windows 7">
+            </div>
+
+            <h2>7. Escolher o tipo de instalação</h2>
+
+            <p>
+                O instalador poderá apresentar opções de atualização ou
+                instalação personalizada.
+            </p>
+
+            <h3>Atualização</h3>
+
+            <p>
+                Tenta manter arquivos, configurações e programas compatíveis.
+                A disponibilidade depende do sistema já instalado.
+            </p>
+
+            <h3>Personalizada (avançada)</h3>
+
+            <p>
+                Permite escolher a partição onde o Windows será instalado.
+                Essa opção é normalmente utilizada em uma instalação limpa.
+            </p>
+
+            <div class="aviso">
+                <strong>Atenção:</strong>
+                A instalação personalizada pode apagar os dados da partição
+                selecionada. Escolha o disco com muito cuidado.
+            </div>
+
+            <div class="imagem">
+                <img src="../IMG/tipodeinstalacaowindows7.PNG" alt="instalação do windows 7 passo a passo">
+            </div>
+
+            <h2>8. Escolher e formatar a partição</h2>
+
+            <ol>
+                <li>Selecione o disco ou partição desejada.</li>
+                <li>Confira o tamanho e as informações exibidas.</li>
+                <li>Se necessário, utilize a opção "Formatar".</li>
+                <li>Confirme a operação quando solicitado.</li>
+                <li>Clique em "Avançar" para continuar.</li>
+            </ol>
+
+            <div class="perigo">
+                <strong>Alerta:</strong>
+                Não formate uma partição sem ter certeza de que ela não
+                contém arquivos importantes.
+            </div>
+
+            <div class="imagem">
+                <img src="../IMG/tipodeparticaowindows7.PNG" alt="tipos de partição para windows 7 ">
+            </div>
+
+            <h2>9. Aguardar a cópia dos arquivos</h2>
+
+            <p>
+                O instalador começará a copiar os arquivos do Windows 7
+                para o disco rígido ou SSD.
+            </p>
+
+            <p>
+                Durante esse processo, o computador poderá reiniciar
+                automaticamente algumas vezes.
+            </p>
+
+            <ul>
+                <li>Não desligue o computador durante a instalação.</li>
+                <li>Mantenha o computador conectado à energia.</li>
+                <li>Se necessário, remova o pendrive após a primeira reinicialização.</li>
+            </ul>
+
+            <div class="imagem">
+                <img src="../IMG/copiandoarquivoswindows7.PNG" alt="copiando aquivos windows 7">
+            </div>
+
+            <h2>10. Configuração inicial do Windows 7</h2>
+
+            <p>
+                Após a instalação dos arquivos, o sistema solicitará algumas
+                configurações iniciais.
+            </p>
+
+            <ol>
+                <li>Digite um nome para o usuário.</li>
+                <li>Defina um nome para o computador.</li>
+                <li>Crie uma senha, se desejar.</li>
+                <li>Informe a chave de produto, quando solicitada.</li>
+                <li>Escolha as configurações de atualização.</li>
+                <li>Configure data, hora e fuso horário.</li>
+                <li>Selecione o tipo de rede, quando disponível.</li>
+            </ol>
+
+            <div class="imagem">
+                <img src="../IMG/cofiguracoesfinaiswindows7.PNG" alt="configurações finais windows 7">
+            </div>
+
+            <h2>11. Instalar os drivers</h2>
+
+            <p>
+                Depois de concluir a instalação, alguns dispositivos podem
+                não funcionar corretamente até que seus drivers sejam instalados.
+            </p>
+
+            <p>Verifique principalmente:</p>
+
+            <ul>
+                <li>Driver do chipset.</li>
+                <li>Driver de vídeo.</li>
+                <li>Driver de áudio.</li>
+                <li>Driver de rede.</li>
+                <li>Drivers de USB e outros dispositivos.</li>
+            </ul>
+
+            <p>
+                Sempre que possível, baixe os drivers diretamente do site
+                oficial do fabricante do computador ou do componente.
+            </p>
+
+            <div class="imagem">
+                <img src="../IMG/driverswindows7.PNG" alt="gerenciador de dispositivos drivers">
+            </div>
+
+            <h2>12. Conclusão</h2>
+
+            <p>
+                Depois de instalar os drivers e configurar o sistema,
+                o Windows 7 estará pronto para ser utilizado.
+            </p>
+
+            <div class="sucesso">
+                <strong>Instalação concluída!</strong>
+                Lembre-se de manter seus arquivos protegidos e utilizar
+                programas de fontes confiáveis.
+            </div>
+
+            <h2>Recomendações finais</h2>
+
+            <ul>
+                <li>Faça uma cópia de segurança dos seus arquivos.</li>
+                <li>Use uma ISO legítima do Windows.</li>
+                <li>Utilize uma chave de ativação válida.</li>
+                <li>Evite baixar programas de sites desconhecidos.</li>
+                <li>Considere utilizar um sistema operacional com suporte atualizado.</li>
+            </ul>
+
+        </article>
+    </main>
+
+
+
+<section></section>
+<footer class="rodape">
+    <nav class="menu2">
+        <a href="../rodapé/sobre.html">Sobre</a>
+        <a href="../rodapé/contato.html">Contato</a>
+        <a href="../rodapé/privacidade.html">Política de Privacidade</a>
+        <a href="../rodapé/termos.html">Termos de Uso</a>
+    </nav>
+
+    <p class="prodape">&copy; 2026 - Seu Site. Todos os direitos reservados.</p>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
