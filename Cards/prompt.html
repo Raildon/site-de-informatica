@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+    <link rel="stylesheet" href="../CSS/css.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+     <style>
+
+        body {
+            background-color: #050505;
+            color: #ddd;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        article {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1, h2, h3 {
+            color: #00ff41;
+        }
+
+        p, li {
+            line-height: 1.7;
+        }
+
+        pre {
+            background-color: #0b1110;
+            color: #00ff41;
+            padding: 15px;
+            border: 1px solid #1c4d2c;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        code {
+            color: #00ff41;
+        }
+
+        .matrix {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+            background: black;
+            border: 1px solid #00ff41;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        .aviso {
+            color: #aaa;
+            font-size: 14px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <nav class="menu">
+         <a href="../index.html" class="Logo"><img src="../IMG/LOGO.png"  style="height: 50px; width: 60px; border-radius: 10px;"></a>
+        <div class="menu1">
+        <a href="../index.html">Início</a>
+        <a href="../Artigos/windows.html">Windows</a>
+        <a href="../Artigos/Hardware.html">Hardware</a>
+        <a href="../Artigos/software.html">Sofware</a>
+        <a href="../rodapé/sobre.html">Sobre</a>
+        </div>
+    </nav>
+
+    
+<article>
+    <header>
+        <h1>Prompt de Comando (CMD)</h1>
+
+        <p>
+            O Prompt de Comando, também conhecido como CMD, é uma ferramenta
+            do Windows que permite ao usuário interagir com o sistema
+            operacional por meio de comandos de texto.
+        </p>
+    </header>
+
+    <section>
+        <h2>O que é o Prompt de Comando?</h2>
+
+        <p>
+            O Prompt de Comando é um programa do Windows que permite executar
+            comandos para realizar tarefas no computador. Diferentemente das
+            interfaces gráficas, em que utilizamos janelas e botões, no CMD
+            digitamos instruções diretamente no terminal.
+        </p>
+
+        <p>
+            Ele é bastante utilizado por estudantes, técnicos de informática
+            e profissionais de tecnologia para realizar configurações,
+            diagnósticos e tarefas de manutenção.
+        </p>
+    </section>
+
+    <section>
+        <h2>Para que serve o CMD?</h2>
+
+        <p>
+            O Prompt de Comando pode ser utilizado para executar diversas
+            tarefas no Windows, desde operações simples até procedimentos
+            de diagnóstico e administração do sistema.
+        </p>
+
+        <ul>
+            <li>Consultar informações do computador;</li>
+            <li>Navegar entre pastas e arquivos;</li>
+            <li>Criar, copiar e excluir arquivos e diretórios;</li>
+            <li>Verificar informações da rede;</li>
+            <li>Testar a conexão com a internet;</li>
+            <li>Executar ferramentas de diagnóstico;</li>
+            <li>Automatizar tarefas utilizando scripts.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Como abrir o Prompt de Comando?</h2>
+
+        <p>
+            Existem diferentes maneiras de abrir o CMD no Windows. Uma das
+            formas mais simples é utilizar o atalho de teclado.
+        </p>
+
+        <ol>
+            <li>Pressione as teclas <strong>Windows + R</strong>;</li>
+            <li>Digite <strong>cmd</strong> na caixa de execução;</li>
+            <li>Pressione a tecla <strong>Enter</strong>.</li>
+        </ol>
+
+        <p>
+            Outra opção é abrir o menu Iniciar e pesquisar por
+            <strong>Prompt de Comando</strong>.
+        </p>
+    </section>
+
+    <section>
+
+        <!-- aqui comando basicos -->
+
+        <h2>Comandos básicos do CMD</h2>
+
+        <p>
+            O CMD possui diversos comandos que ajudam o usuário a interagir
+            com o sistema operacional. Veja alguns exemplos:
+        </p>
+
+        <h3>Comando: DIR</h3>
+
+        <p>
+            Exibe os arquivos e pastas existentes no diretório atual.
+        </p>
+
+        <pre><code>dir</code></pre>
+
+        <h3>Comando: CD</h3>
+
+        <p>
+            Permite navegar entre diretórios e acessar outras pastas.
+        </p>
+
+        <pre><code>cd Desktop</code></pre>
+
+        <h3>Comando: CLS</h3>
+
+        <p>
+            Limpa o conteúdo exibido na tela do Prompt de Comando.
+        </p>
+
+        <pre><code>cls</code></pre>
+
+        <h3>Comando IPCONFIG</h3>
+
+        <p>
+            Exibe informações de configuração de rede do computador, como
+            endereços IP e outros dados de conexão.
+        </p>
+
+        <pre><code>ipconfig</code></pre>
+
+        <h3>Comando PING</h3>
+
+        <p>
+            Permite testar a conectividade com um endereço de rede ou
+            dispositivo.
+        </p>
+
+        <pre><code>ping google.com</code></pre>
+    </section>
+
+    <section>
+        <h2>Cuidados ao utilizar o Prompt de Comando</h2>
+
+        <p>
+            Embora o CMD seja uma ferramenta muito útil, é importante ter
+            cuidado ao executar comandos que alteram arquivos, configurações
+            ou componentes do sistema.
+        </p>
+
+        <p>
+            Alguns comandos exigem privilégios de administrador e podem
+            causar alterações importantes no computador. Por isso, procure
+            entender a função de cada comando antes de executá-lo.
+        </p>
+    </section>
+
+    <section>
+        <h2>Exemplo: Como deixar a tela do CMD parecida com o Matrix?</h2>
+
+        <p>
+            No final deste conteúdo, vamos apresentar um exemplo divertido
+            utilizando o Prompt de Comando para personalizar a aparência
+            do terminal com cores verdes, lembrando o visual do filme Matrix.
+        </p>
+
+        <p>
+            Para começar, podemos utilizar o seguinte comando:
+        </p>
+
+        <pre><code>color 0a</code></pre>
+
+        <p>
+            Esse comando altera a cor do texto para verde e mantém o fundo
+            preto, criando uma aparência semelhante ao estilo visual do Matrix.
+        </p>
+
+        <p>
+            Na próxima demonstração, você poderá aprender como criar um
+            efeito de caracteres aparecendo na tela para deixar o CMD ainda
+            mais parecido com o terminal do filme.
+        </p>
+    </section>
+
+    <section>
+        <h2>Conclusão</h2>
+
+        <p>
+            O Prompt de Comando é uma ferramenta importante do Windows,
+            permitindo executar comandos, consultar informações e realizar
+            tarefas de manutenção e configuração.
+        </p>
+
+        <p>
+            Aprender a utilizar o CMD é uma ótima maneira de começar a
+            conhecer melhor o funcionamento dos sistemas operacionais e
+            desenvolver habilidades em informática.
+        </p>
+    </section>
+</article>
+
+
+<article>
+
+        <section>
+            <h2>Exemplo: Como deixar a tela do CMD parecida com o Matrix?</h2>
+
+            <p>
+                Agora que você já conhece alguns comandos básicos, que tal
+                personalizar o Prompt de Comando com um visual inspirado
+                no filme Matrix?
+            </p>
+
+            <h3>Passo 1 – Alterar as cores</h3>
+
+            <p>
+                Para deixar o texto verde e o fundo preto, abra o CMD e digite:
+            </p>
+
+            <pre><code>color 0a</code></pre>
+
+            <p>
+                Esse comando altera a cor do texto do terminal para verde,
+                mantendo o fundo preto.
+            </p>
+
+            <h3>Passo 2 – Criar o efeito de caracteres</h3>
+
+            <p>
+                O código abaixo pode ser salvo em um arquivo BAT para
+                exibir números aleatórios continuamente no Prompt de Comando.
+            </p>
+
+            <pre><code>@echo off
+color 0a
+:a
+echo %random%%random%%random%%random%%random%
+goto a</code></pre>
+
+            <h3>Como salvar o arquivo?</h3>
+
+            <ol>
+                <li>Abra o Bloco de Notas.</li>
+                <li>Cole o código acima.</li>
+                <li>Clique em "Salvar como".</li>
+                <li>Digite o nome <strong>matrix.bat</strong>.</li>
+                <li>Selecione "Todos os arquivos".</li>
+                <li>Salve e execute o arquivo.</li>
+            </ol>
+
+            <p>
+                Para interromper o comando, pressione
+                <strong>Ctrl + C</strong>.
+            </p>
+
+        </section>
+
+        <section>
+            <h2>Visual Matrix em HTML</h2>
+
+            <p>
+                O exemplo abaixo utiliza HTML, CSS e JavaScript para criar
+                uma animação de caracteres verdes semelhante ao efeito
+                de chuva digital do Matrix.
+            </p>
+
+            <div class="matrix">
+                <canvas id="matrixCanvas"></canvas>
+            </div>
+
+            <p class="aviso">
+                Este é um efeito visual criado no navegador. Ele não executa
+                comandos do Prompt de Comando do Windows.
+            </p>
+        </section>
+
+        <section>
+            <h2>Conclusão</h2>
+
+            <p>
+                O Prompt de Comando é uma ferramenta importante do Windows
+                que permite executar comandos e realizar diversas tarefas.
+                Com HTML, CSS e JavaScript, também podemos criar efeitos
+                visuais inspirados no terminal.
+            </p>
+        </section>
+
+    </article>
+
+    <script>
+
+        const canvas = document.getElementById("matrixCanvas");
+        const ctx = canvas.getContext("2d");
+
+        const characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const fontSize = 14;
+
+        let columns;
+        let drops;
+
+        function resizeCanvas() {
+
+            canvas.width = canvas.clientWidth;
+            canvas.height = canvas.clientHeight;
+
+            columns = Math.floor(canvas.width / fontSize);
+
+            drops = Array(columns).fill(1);
+
+        }
+
+        function drawMatrix() {
+
+            ctx.fillStyle = "rgba(0, 0, 0, 0.08)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#00ff41";
+            ctx.font = fontSize + "px monospace";
+
+            for (let i = 0; i < drops.length; i++) {
+
+                const text =
+                    characters.charAt(
+                        Math.floor(Math.random() * characters.length)
+                    );
+
+                const x = i * fontSize;
+                const y = drops[i] * fontSize;
+
+                ctx.fillText(text, x, y);
+
+                if (y > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+
+                drops[i]++;
+
+            }
+
+        }
+
+        window.addEventListener("resize", resizeCanvas);
+
+        resizeCanvas();
+
+        setInterval(drawMatrix, 50);
+
+    </script>
+
+
+
+
+
+    <section></section>
+   <footer class="rodape">
+    <nav class="menu2">
+        <a href="../rodapé/sobre.html">Sobre</a>
+        <a href="../rodapé/contato.html">Contato</a>
+        <a href="../rodapé/privacidade.html">Política de Privacidade</a>
+        <a href="../rodapé/termos.html">Termos de Uso</a>
+    </nav>
+
+    <p class="prodape">&copy; 2026 - Seu Site. Todos os direitos reservados.</p>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
